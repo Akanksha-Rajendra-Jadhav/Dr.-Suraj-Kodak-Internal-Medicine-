@@ -1732,7 +1732,8 @@ footer {
 .footer-credit-row {
   display: flex;
   justify-content: center;
-  padding: 0 0 22px
+  padding: 0 24px 22px;
+  box-sizing: border-box
 }
 
 .ideaclicks-credit {
@@ -1740,6 +1741,8 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
   padding: 6px 16px 6px 6px;
   border-radius: 999px;
   background: rgba(255, 255, 255, .06);
@@ -1753,6 +1756,12 @@ footer {
   background: rgba(255, 255, 255, .12);
   border-color: #C9B9AC;
   transform: translateY(-1px)
+}
+
+.ideaclicks-credit span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
 }
 
 .ideaclicks-credit b {
@@ -1777,6 +1786,46 @@ footer {
 
   .footer-credit-row {
     padding-bottom: 26px
+  }
+}
+
+@media(max-width:420px) {
+  .footer-credit-row {
+    padding: 0 16px 24px
+  }
+
+  .ideaclicks-credit {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px 12px 6px 5px;
+    font-size: .64rem
+  }
+
+  .ideaclicks-logo {
+    width: 22px;
+    height: 22px
+  }
+}
+
+@media(max-width:340px) {
+  .ideaclicks-credit span {
+    white-space: normal;
+    text-align: left;
+    line-height: 1.25
+  }
+}
+
+@media(min-width:1600px) {
+  .ideaclicks-credit {
+    font-size: .8rem;
+    padding: 8px 20px 8px 8px;
+    gap: 12px
+  }
+
+  .ideaclicks-logo {
+    width: 30px;
+    height: 30px
   }
 }
 
