@@ -1712,10 +1712,10 @@ footer {
 
 .footer-bottom {
   border-top: 1px solid #3A2B20;
-  min-height: 65px;
+  min-height: 55px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 18px;
   color: #9C8A7A;
   font-size: .61rem
@@ -1727,6 +1727,57 @@ footer {
 
 .footer-bottom a:hover {
   color: #fff
+}
+
+.footer-credit-row {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 22px
+}
+
+.ideaclicks-credit {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 16px 6px 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid #3A2B20;
+  font-size: .72rem;
+  letter-spacing: .01em;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease
+}
+
+.ideaclicks-credit:hover {
+  background: rgba(255, 255, 255, .12);
+  border-color: #C9B9AC;
+  transform: translateY(-1px)
+}
+
+.ideaclicks-credit b {
+  color: #fff;
+  font-weight: 700
+}
+
+.ideaclicks-logo {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 2px;
+  display: block;
+  flex-shrink: 0
+}
+
+@media(max-width:700px) {
+  .footer-bottom {
+    padding: 14px 0
+  }
+
+  .footer-credit-row {
+    padding-bottom: 26px
+  }
 }
 
 @media(max-width:950px) {
@@ -4114,3 +4165,37 @@ h1 em {
     box-shadow: 0 -8px 25px rgba(82, 43, 18, .12) !important
   }
 }
+
+/* Floating Buttons Code */
+
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.floating-buttons a img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.floating-buttons a img:hover {
+  transform: scale(1.1);
+}
+
+.custom-border {
+    border: 2px solid #045879;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #ffffff; /* optional */
+}
+/* Floating Buttons Code ENDS  */
