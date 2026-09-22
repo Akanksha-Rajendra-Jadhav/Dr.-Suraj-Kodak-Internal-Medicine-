@@ -1,15 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Dr. Suraj Kodak — Internal Medicine, Diabetology and Rheumatology care at Medicos Clinic, Vishrantwadi, Pune.">
-  <meta name="theme-color" content="#6F2F04">
-  <title>Dr. Suraj Kodak | Internal Medicine, Diabetology & Rheumatology</title>
+  <!-- ============ CHARSET & VIEWPORT ============ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- ============ PRIMARY SEO META ============ -->
+  <title>Dr. Suraj Kodak | Internal Medicine, Diabetology & Rheumatology Specialist in Vishrantwadi, Pune</title>
+  <meta name="description" content="Dr. Suraj A. Kodak (MD, Internal Medicine) offers expert consultation for diabetes, hypertension, thyroid, rheumatology and general medicine at Medicos Clinic, Vishrantwadi, Pune. 10+ years experience, 4.9★ rating. Book an appointment today." />
+  <meta name="author" content="Dr. Suraj Kodak - Medicos Clinic" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://drsurajkodak.in/" />
+
+  <!-- ============ THEME & APP META ============ -->
+  <meta name="theme-color" content="#6F2F04" />
+  <meta name="application-name" content="Dr. Suraj Kodak - Medicos Clinic" />
+
+  <!-- ============ GEO / LOCAL SEO META ============ -->
+  <meta name="geo.region" content="IN-MH" />
+  <meta name="geo.placename" content="Vishrantwadi, Pune" />
+  <meta name="geo.position" content="18.572600;73.878300" />
+  <meta name="ICBM" content="18.572600, 73.878300" />
+
+  <!-- ============ OPEN GRAPH ============ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Dr. Suraj Kodak - Medicos Clinic" />
+  <meta property="og:title" content="Dr. Suraj Kodak | Internal Medicine, Diabetology & Rheumatology in Pune" />
+  <meta property="og:description" content="Expert, patient-focused care in Internal Medicine, Diabetology and Rheumatology at Medicos Clinic, Vishrantwadi, Pune. 10+ years experience, 4.9★ rating from 244+ patients." />
+  <meta property="og:image" content="https://drsurajkodak.in/assets/dr-suraj-kodak-logo.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://drsurajkodak.in/" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- ============ TWITTER CARD ============ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dr. Suraj Kodak | Internal Medicine, Diabetology & Rheumatology in Pune" />
+  <meta name="twitter:description" content="Patient-focused care in Internal Medicine, Diabetology and Rheumatology at Medicos Clinic, Vishrantwadi, Pune. Book a consultation with Dr. Suraj Kodak." />
+  <meta name="twitter:image" content="https://drsurajkodak.in/assets/dr-suraj-kodak-logo.webp" />
+
+  <!-- ============ FAVICONS ============ -->
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+
+  <!-- ============ FONT LOADING (preconnect + swap) ============ -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ============ PRELOAD HERO IMAGE (LCP) ============ -->
+  <link rel="preload" as="image" href="assets/doctor-hero-enhanced.jpg" fetchpriority="high" />
+
+  <!-- ============ STYLES ============ -->
   <link rel="stylesheet" href="style.css?v=20260731finalnavreviews">
+
+  <!-- ============================================================
+       STRUCTURED DATA (JSON-LD)
+       Combines Physician + MedicalClinic + LocalBusiness + WebSite
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Physician",
+        "@id": "https://drsurajkodak.in/#physician",
+        "name": "Dr. Suraj A. Kodak",
+        "honorificSuffix": "MBBS, MD, CCRJD",
+        "medicalSpecialty": ["Internal Medicine", "Diabetology", "Rheumatology"],
+        "image": "https://drsurajkodak.in/assets/doctor-hero-enhanced.jpg",
+        "url": "https://drsurajkodak.in/",
+        "telephone": "+91-7276783865",
+        "email": "surajkodak007@gmail.com",
+        "worksFor": { "@id": "https://drsurajkodak.in/#clinic" },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Office No. 12, Navrang Plaza, Airport Road, Vishrantwadi",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "411015",
+          "addressCountry": "IN"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://drsurajkodak.in/#clinic",
+        "name": "Medicos Clinic",
+        "image": "https://drsurajkodak.in/assets/clinic-entrance.webp",
+        "url": "https://drsurajkodak.in/",
+        "telephone": "+91-7276783865",
+        "email": "surajkodak007@gmail.com",
+        "priceRange": "₹₹",
+        "medicalSpecialty": ["Internal Medicine", "Diabetology", "Rheumatology"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Office No. 12, Navrang Plaza, Airport Road, Vishrantwadi",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "411015",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "18.572600",
+          "longitude": "73.878300"
+        },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Medicos+Clinic+Navrang+Plaza+Vishrantwadi+Pune",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "244"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Gayatri Gulaskar" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+            "reviewBody": "Extremely grateful for the excellent treatment provided for varicose veins. Dr. Suraj explained the condition clearly, and the care and follow-up made a big difference in recovery."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Vijay Prajapati" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+            "reviewBody": "Visited for Rheumatoid Arthritis treatment and had a wonderful experience with commendable results. Would definitely recommend for any type of arthritis."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Kiran Birambole" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+            "reviewBody": "Consulting Dr. Suraj for 5 years for my parents. He is very professional, treats patients like family, and offers medical, emotional and mental support throughout treatment."
+          }
+        ],
+        "areaServed": ["Vishrantwadi", "Tingre Nagar", "Dhanori", "Kalas", "Viman Nagar", "Yerawada", "Lohegaon", "Airport Road", "Pune"]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://drsurajkodak.in/#organization",
+        "name": "Medicos Clinic - Dr. Suraj Kodak",
+        "url": "https://drsurajkodak.in/",
+        "logo": "https://drsurajkodak.in/assets/dr-suraj-kodak-logo.webp",
+        "sameAs": [
+          "https://www.instagram.com/dr_surajkodak_medicos",
+          "https://www.facebook.com/share/1HyttYNWRK/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://drsurajkodak.in/#website",
+        "url": "https://drsurajkodak.in/",
+        "name": "Dr. Suraj Kodak - Medicos Clinic",
+        "publisher": { "@id": "https://drsurajkodak.in/#organization" },
+        "inLanguage": "en-IN"
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema (kept separate for clarity/maintainability) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What conditions does Dr. Suraj Kodak consult for?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Consultation is available for general medical concerns, diabetes, hypertension, thyroid-related problems, rheumatology concerns and other internal medicine needs." }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I book a consultation?",
+        "acceptedAnswer": { "@type": "Answer", "text": "You can call the clinic directly at +91 72767 83865 or use the WhatsApp option on the website to enquire about an appointment." }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is Medicos Clinic located?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Medicos Clinic is located at Office No. 12, Navrang Plaza, Airport Road, Vishrantwadi, Pune – 411015." }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I bring previous medical reports?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. If you have previous prescriptions, investigation reports, scans or medication details relevant to your concern, bringing them can help make the consultation more useful." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I contact the clinic before visiting?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can call the clinic or contact the clinic through WhatsApp before your visit for appointment-related information." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is follow-up care available?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Follow-up consultation can be discussed with the doctor based on your condition, treatment plan and individual healthcare needs." }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <header class="header">
@@ -217,8 +404,17 @@
     <img src="assets/patient-consulation.png" alt="Dr. Suraj Kodak consulting in his clinic" loading="lazy">
     <span class="gallery-caption"><b>Healing with Compassion</b><small>Patient consultation</small></span>
   </button>
-  
 
+   <button class="gallery-card" type="button" data-img="assets/doctor-writing-consultation.jpg" data-alt="Dr. Suraj Kodak consulting in his clinic">
+    <img src="assets/Dr. Suraj Avinash Kodak.jpg.jpeg" alt="Dr. Suraj Kodak consulting in his clinic" loading="lazy">
+    <span class="gallery-caption"><b>Leading & Trusted Doctor in Pune – Awarded 2026
+</b><small>Dr. Suraj Avinash Kodak Honoured with the Maharashtra Excellence Award 2026</small></span>
+  </button>
+
+   <button class="gallery-card" type="button" data-img="assets/doctor-writing-consultation.jpg" data-alt="Dr. Suraj Kodak consulting in his clinic">
+    <img src="assets/IMG-20260822-WA0053.jpg.jpeg" alt="Dr. Suraj Kodak consulting in his clinic" loading="lazy">
+    <span class="gallery-caption"><b>Dr. Suraj Avinash Kodak</b><small>Best MD Medicine & Diabetologist in Pune – Dr. Suraj Kodak</small></span>
+  </button>
 
     <button class="gallery-card gallery-wide" type="button" data-img="assets/consultation-family.webp" data-alt="Consultation at Medicos Clinic">
     <img src="assets/Waiting area.png" alt="Consultation at Medicos Clinic" loading="lazy">
