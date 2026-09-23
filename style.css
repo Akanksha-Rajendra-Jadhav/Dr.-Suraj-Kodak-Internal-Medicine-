@@ -1906,11 +1906,11 @@ footer {
 }
 
 .gallery-v2 .gallery-card:nth-child(9) img {
-  object-position: center 16%;
+  object-position: center top;
 }
 
 .gallery-v2 .gallery-card:nth-child(10) img {
-  object-position: center 16%;
+  object-position: center top;
 }
 
 .gallery-v2 .gallery-caption {
@@ -4560,4 +4560,20 @@ h1 em {
   .blog-hero-img { margin-bottom: -40px; }
   .blog-body-section { padding-top: 80px; }
   .blog-cta-box { flex-direction: column; align-items: flex-start; }
+}
+
+/* =========================================================
+   FACE-SAFE CROPPING OVERRIDE (award photo)
+   Forces top-anchored cropping wherever this specific photo
+   is used as a thumbnail/hero, so the head is never clipped.
+   ========================================================= */
+.news-card-img img[src*="dr-suraj-award-photo"],
+.news-card-img img[src*="IMG-20260822-WA0053"],
+.blog-hero-img img[src*="dr-suraj-award-photo"],
+.blog-hero-img img[src*="IMG-20260822-WA0053"],
+.blog-inline-img img[src*="dr-suraj-award-photo"],
+.blog-inline-img img[src*="IMG-20260822-WA0053"],
+.gallery-v2 .gallery-card img[src*="dr-suraj-award-photo"],
+.gallery-v2 .gallery-card img[src*="IMG-20260822-WA0053"] {
+  object-position: center top !important;
 }
