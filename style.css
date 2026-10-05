@@ -4653,3 +4653,11 @@ h1 em {
 .hero-award-card b { display: block; font-size: 1.08rem; margin: 2px 0; }
 .hero-award-card span { font-size: .92rem; color: #746A62; line-height: 1.45; display: block; }
 @media (max-width: 560px) { .hero-award-card img { width: 68px; height: 68px; } .hero-award-card b { font-size: 1rem; } }
+
+@media (max-width: 560px) {
+  .hero-award-card { gap: 12px; padding: 10px 12px 10px 10px; margin: 18px 0 16px; border-radius: 14px; }
+  .hero-award-card img { width: 58px; height: 58px; border-radius: 10px; }
+  .hero-award-card small { font-size: .62rem; letter-spacing: .06em; }
+  .hero-award-card b { font-size: .92rem; line-height: 1.25; margin: 1px 0 2px; }
+  .hero-award-card span { font-size: .74rem; line-height: 1.35; }
+}
