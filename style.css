@@ -4640,3 +4640,16 @@ h1 em {
 .gallery-v2 .gallery-card img[src*="Doctor-patient-img"] {
   object-position: center top !important;
 }
+
+/* About section award text */
+.about-award-text { margin: 0 0 16px !important; }
+.about-award-text a { color: var(--green); font-weight: 700; }
+
+/* Hero award photo card */
+.hero-award-card { display: flex; gap: 16px; align-items: center; margin: 26px 0 22px; padding: 12px 16px 12px 12px; border-radius: 16px; background: #fff; border: 1px solid #E4D8CC; box-shadow: 0 10px 26px rgba(82, 43, 18, .12); text-decoration: none; color: #17110D; transition: transform .2s, box-shadow .2s; }
+.hero-award-card:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(82, 43, 18, .18); }
+.hero-award-card img { width: 84px; height: 84px; object-fit: cover; object-position: center 25%; border-radius: 12px; flex: none; border: 2px solid #FFD68C; }
+.hero-award-card small { display: block; color: #9A5A20; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .72rem; }
+.hero-award-card b { display: block; font-size: 1.08rem; margin: 2px 0; }
+.hero-award-card span { font-size: .92rem; color: #746A62; line-height: 1.45; display: block; }
+@media (max-width: 560px) { .hero-award-card img { width: 68px; height: 68px; } .hero-award-card b { font-size: 1rem; } }
